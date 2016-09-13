@@ -1,5 +1,13 @@
 body {
   margin: 0;
-  background-color: papayawhip;
+  background-color: #f7f7f7;
+  color: #444444;
   font-family: sans-serif;
   padding: 1em; }
+
+#container {
+  padding-top: 2em;
+  text-align: center; }
+  #container .heart {
+    color: indianred;
+    font-size: 3em; }

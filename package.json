@@ -1,15 +1,4 @@
 {
-  "name": "StarterPack",
-  "version": "0.0.1",
-  "description": "Baseline project structure",
-  "main": "src/js/index.js",
-  "keywords": [
-    "webpack",
-    "sass",
-    "browsersync"
-  ],
-  "author": "Paul McClean",
-  "license": "MIT",
   "devDependencies": {
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1",
@@ -18,8 +7,9 @@
     "browser-sync": "^2.15.0",
     "watch": "^0.19.2"
   },
+  "private": true,  
   "scripts": {
-    "test": "karma",
+    "test": "whatever",
     "clean": "rm -r dist/*",
     "copy:html": "cp src/index.html dist/",
     "watch:html": "watch \"npm run copy:html\" src/",
@@ -28,6 +18,5 @@
     "build:css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
     "build": "npm run clean && npm run copy:html && npm run build:css && webpack",
     "serve": "npm run build && webpack && parallelshell \"npm run watch:html\"  \"npm run watch:css\" \"webpack-dev-server --content-base dist/\" \"browser-sync start --proxy \"localhost:8080\" --files \"dist/**/*\" "
-  },
-  "dependencies": {}
+  }
 }

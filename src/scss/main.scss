@@ -1,8 +1,20 @@
-$badass: papayawhip;
+$my-background: #f7f7f7;
+$my-text-color: #444444;
 
 body { 
   margin: 0; 
-  background-color: $badass;
+  background-color: $my-background;
+  color: $my-text-color;
   font-family: sans-serif;
   padding: 1em; 
+}
+
+#container {
+  padding-top: 2em;
+  text-align: center;
+
+  .heart {
+    color: indianred;
+    font-size: 3em;
+  }
 }

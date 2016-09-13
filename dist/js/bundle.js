@@ -53,7 +53,7 @@
 
 	
 
-	console.log('JS files successfully built, yo');
+	console.log('JS files successfully built, innit bruv');
 
 /***/ }
 /******/ ]);
