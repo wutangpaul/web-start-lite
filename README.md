@@ -14,7 +14,7 @@ All tasks are run via NPM, no gulp/grunt needed.
 ### Usage
 Install dependencies
 
-    npm Install
+    npm install
 
 Run development server
 
