@@ -16,10 +16,10 @@ Install dependencies
 
     npm Install
 
-Serve
+Run development server
 
     npm run serve
 
-Build
+Build production version
 
     npm run build
