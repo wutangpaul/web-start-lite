@@ -1,7 +1,7 @@
 
 ## Overview
 
-Web Lite is a barebones, npm-based boilerplate for modern web development.
+Web Start Lite is a barebones, npm-based boilerplate for modern web development.
 
 ### Features
 * Webpack
