@@ -1,12 +1,12 @@
 {
   "devDependencies": {
-    "browser-sync": "^2.15.0",
-    "node-sass": "^3.9.3",
-    "watch": "^0.19.2",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.1"
+    "webpack-dev-server": "^1.15.1",
+    "node-sass": "^3.9.3",
+    "browser-sync": "^2.15.0",
+    "watch": "^0.19.2"
   },
-  "private": true,
+  "private": true,  
   "scripts": {
     "test": "whatever",
     "clean": "rm -rf dist/*",
@@ -16,6 +16,6 @@
     "build:js": "webpack",
     "build:css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
     "build": "npm run clean && npm run copy:html && npm run build:css && webpack",
-    "serve": "npm run build & npm run watch:html & npm run watch:css & webpack-dev-server --content-base dist & browser-sync start --proxy localhost:8080 --files dist/**/*"
+    "serve": "npm run build & npm run watch:html & npm run watch:css & webpack-dev-server --content-base dist/ & browser-sync start --proxy localhost:8080 --files dist"
   }
 }
