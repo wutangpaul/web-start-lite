@@ -4,10 +4,10 @@
 Web Lite is a barebones, npm-based boilerplate for modern web development.
 
 ### Features
-Webpack
-SASS
-BrowserSync
-LiveReload
+* Webpack
+* SASS
+* BrowserSync
+* LiveReload
 
 ### Usage
 Install dependencies
