@@ -11,10 +11,13 @@ LiveReload
 
 ### Usage
 Install dependencies
+
     npm Install
 
 Serve
+
     npm run serve
 
 Build
+
     npm run build
