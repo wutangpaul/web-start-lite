@@ -12,7 +12,7 @@
     "test": "whatever",
     "clean": "rm -rf dist/*",
     "copy:html": "cp src/index.html dist/",
-    "watch:html": "watch \"npm run copy:html\" src/*.html",
+    "watch:html": "watch \"npm run copy:html\" src/",
     "watch:css": "node-sass -w --include-path scss src/scss/main.scss dist/css/main.css",
     "build:js": "webpack",
     "build:css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
