@@ -51,9 +51,7 @@
 /* 1 */
 /***/ function(module, exports) {
 
-	
-
-	console.log('JS files successfully built, innit bruv');
+	console.log('JS files successfully built');
 
 /***/ }
 /******/ ]);

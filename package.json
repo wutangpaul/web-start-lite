@@ -5,18 +5,19 @@
     "node-sass": "^3.10.0",
     "browser-sync": "^2.15.0",
     "concurrently": "^2.2.0",
-    "watch-cli": "^0.2.1"
+    "watch-cli": "^0.2.1",
+    "browser-sync-webpack-plugin": "^1.1.2"
   },
   "private": true,
   "scripts": {
     "test": "whatever",
-    "clean": "rm -rf dist/*",
+    "clean": "rm -rf dist/ && mkdir dist",
     "copy:html": "cp src/*.html dist/",
     "watch:html": "watch -p \"src/*.html\" -c \"npm run copy:html\" ",
-    "watch:css": "node-sass -w --include-path scss src/scss/main.scss dist/css/main.css",
+    "watch:css": "node-sass -w  --quiet --include-path scss src/scss/main.scss dist/css/main.css",
     "build:js": "webpack",
     "build:css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
     "build": "npm run clean && npm run copy:html && npm run build:css && webpack",
-    "serve": "npm run build && concurrently \"npm run watch:html\" \"npm run watch:css\" \"webpack-dev-server --content-base dist/\" \"browser-sync start --proxy localhost:8080 --files dist\""
+    "serve": "npm run build && concurrently \"npm run watch:html\" \"npm run watch:css\" \"webpack-dev-server --content-base dist/\" "
   }
 }
