@@ -1,1 +1,1 @@
-console.log('JS files successfully built innit');
+console.log('JS files successfully built.');
