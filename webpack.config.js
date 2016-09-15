@@ -21,6 +21,7 @@ module.exports = {
         // (which should be serving on http://localhost:8080/)
         // through BrowserSync
         proxy: 'http://localhost:8080',
+        // watch dist folder for changes
         files: 'dist/'
       },
       // plugin options
