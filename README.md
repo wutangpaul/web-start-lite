@@ -8,8 +8,10 @@ All tasks are run via NPM, no gulp/grunt needed.
 ### Features
 * Webpack
 * SASS
-* BrowserSync
-* LiveReload
+* Browsersync with live reload
+
+### Requirements
+* NodeJS  v0.10.26+
 
 ### Usage
 Install dependencies
